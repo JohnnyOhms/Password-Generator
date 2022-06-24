@@ -30,6 +30,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Bebas Neue';
+    color: var(--white);
 }
 
 h1{
@@ -43,21 +44,31 @@ h1{
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    background-color: var(--section);
+    /* background-color: var(--color-right); */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .display{
-    background-color: var(--white);
+    background-color: var(--section);
     margin: 0 auto;
     width: 96%;
     height: 40px;
+    font-size: 25px;
+    text-align: left;
     border-radius: var(--radius);
     padding: 1rem;
     margin: 1rem;
     cursor: pointer;
+}
+
+#max{
+    margin-left: 5px;
+}
+
+#min{
+    margin-right: 5px;
 }
 
 .range-value{
@@ -65,22 +76,39 @@ h1{
     font-size: 15px;
     font-family: inherit;
     margin-bottom: 5px ;
+    color: var(--white);
 }
 
 h3{
     padding-right: 8px;
+    margin-left: 1rem;
 }
 
 .selectArea{
     margin: 0px 5px 20px 5px;
-    background-color: var(--white);
-    padding: 2rem;
+    background-color: var(--section);
+    color: inherit;
+    padding: 1.6rem;
     border-radius: var(--radius);
     display: flex;
     justify-content: space-between;
     font-size: 20px;
     font-family: inherit;
 }
+
+.btn{
+    margin: 0 auto;
+    padding: 1.3rem;
+    width: 100%;
+    border-radius: var(--radius);
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-family: inherit;
+    color: var(--white);
+    background-image: linear-gradient(to right, var(--color-left) , var(--color-right));
+}
+
 
 #range{
     width: 100%;
@@ -96,6 +124,7 @@ input[type="checkbox"]{
     background-color: var(--black);
     border-radius: 30px;
     transition: .5s; 
+    cursor: pointer;
 }
 
 input:checked[type="checkbox"]{
