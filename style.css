@@ -80,3 +80,9 @@ h3{
     font-size: 20px;
     font-family: inherit;
 }
+
+#range{
+    width: 100%;
+    cursor: pointer;
+}
+
