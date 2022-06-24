@@ -124,7 +124,7 @@ input[type="checkbox"]{
     -webkit-appearance: none;
     background-color: var(--black);
     border-radius: 30px;
-    transition: .5s; 
+    transition: .2s; 
     cursor: pointer;
 }
 
@@ -142,7 +142,7 @@ input[type="checkbox"]:before{
     left:0;
     background: #fff;
     transform: scale(1.1);
-    transition: .5s;
+    transition: .2s;
 } 
 
 input:checked[type="checkbox"]:before{
