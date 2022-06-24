@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fascinate&family=Rubik&family=Bebas Neue">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="display"></div>
+        <div class="range-value">
+            <h3>Length</h3> <p class="value">10</p>
+        </div>
+        <form action="" class="selectArea">
+        <input type="range" name="range" id="range" min="4" max="10">
+        </form>
+
+        <form action="" class="selectArea">
+        <label for="uppercase">Include Uppercase</label>
+        <input type="checkbox" name="ucase" id="uppercase">
+        </form>
+
+        <form action="" class="selectArea">
+        <label for="lowercase">Include Lowercase</label>
+        <input type="checkbox" name="lcase" id="lowercase">
+        </form>
+
+        <form action="" class="selectArea">
+        <label for="numbers">Include Uppercase</label>
+        <input type="checkbox" name="numbers" id="numbers">
+        </form>
+
+        <form action="" class="selectArea">
+        <label for="symbols">Include Uppercase</label>
+        <input type="checkbox" name="symbols" id="symbols">
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
