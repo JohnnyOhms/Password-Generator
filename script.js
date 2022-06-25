@@ -1,5 +1,7 @@
 const range = document.getElementById('range');
 let minValue = document.getElementById('min');
+let disPlay = "";
+let data = "";
 
 range.addEventListener("input", ()=>{
     minValue.innerHTML =  range.value;
@@ -24,25 +26,18 @@ display.innerHTML = "";
 
 generate.addEventListener("click", ()=>{
     display.innerHTML = "";
-    let data = "";
-    uppperCase.checked ? data += password.upperCase : data;
-    lowerCase.checked ? data += password.lowerCase : data;
-    numbers.checked ? data += password.numbers : data;
-    symbols.checked ? data += password.symbols : data;
+    uppperCase.checked ? data += (password.upperCase) : "";
+    lowerCase.checked ? data += (password.lowerCase) : "";
+    numbers.checked ? data += (password.numbers) : "";
+    symbols.checked ? data += (password.symbols) : "";
     console.log(data);
+    console.log(data.length);
 
-    display.innerHTML = showPassword(data);
+    // for (let i = 0; i < 5; i++) {
+    //    disPlay += data.charAt(Math.floor(Math.random() * data.length))
+    // }
+    // console.log(disPlay);
 })
 
-function showPassword(d){
-    let disPlay = "";
-    for (let i = 0; i < 5; i++) {
-       disPlay += d.charAt(Math.floor(Math.random() * d.length))
-        // return disPlay;
-        console.log(disPlay);
-    }
-    // display.innerHTML = disPlay;
- 
-    // console.log(disPlay);
-}
+
 
