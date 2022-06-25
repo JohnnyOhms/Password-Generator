@@ -40,7 +40,7 @@ generate.addEventListener("click", ()=>{
             generatePassword(data)
             
         }else{
-            alert("Atleast select a setting")
+            alert("Select any Setting")
         }
     }
 
@@ -54,7 +54,7 @@ function generatePassword(data) {
     }
 
     display.innerHTML = dis_play;
-    // console.log(dis_play);
+    console.log(dis_play);
     
 }
 
