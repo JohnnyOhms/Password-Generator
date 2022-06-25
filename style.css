@@ -108,6 +108,7 @@ h3{
     font-family: inherit;
     color: var(--white);
     background-image: linear-gradient(to right, var(--color-left) , var(--color-right));
+    cursor: pointer;
 }
 
 
