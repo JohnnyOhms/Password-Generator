@@ -54,19 +54,22 @@ function generatePassword(data) {
     }
 
     display.innerHTML = dis_play;
-    console.log(dis_play);
+    // console.log(dis_play);
     
 }
 
 display.addEventListener("click", function(){
-    
-    let textArea = document.createElement("textarea");
-    textArea.value = display.textContent;
-    document.body.appendChild(textArea);
-    textArea.select();
-    document.execCommand("copy");
-    textArea.remove()
-    alert("Password Copied");
+    if(!display.textContent == ""){
+        let textArea = document.createElement("textarea");
+        textArea.value = display.textContent;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        textArea.remove()
+        alert("Password Copied");
+    }else{
+        alert('No password to copy!!')
+    }
 
 })
 

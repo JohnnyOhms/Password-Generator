@@ -63,6 +63,12 @@ h1{
     cursor: pointer;
 }
 
+[contentEditable=true]:empty:before {
+    content: attr(placeholder);
+    opacity: 0.5;
+    color: var(--white);
+  }
+
 #max{
     margin-left: 5px;
 }
